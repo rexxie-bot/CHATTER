@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chatter – a haven for text-based content." />
+  <title>Join Chatter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 style="font-size:clamp(2rem,5vw,2.8rem)">Join Chatter</h1>
+        <p>Tell us who you are and what you love. We will tailor your feed from day one.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container join-box">
+        <form data-form="join" novalidate>
+          <div class="field"><label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" /><span class="error"></span></div>
+          <div class="field"><label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" /><span class="error"></span></div>
+          <div class="field"><label>Your interests</label>
+            <div class="chips">
+              <button type="button" class="chip" aria-pressed="false">Technology</button>
+              <button type="button" class="chip" aria-pressed="false">Fiction</button>
+              <button type="button" class="chip" aria-pressed="false">Business</button>
+              <button type="button" class="chip" aria-pressed="false">Poetry</button>
+              <button type="button" class="chip" aria-pressed="false">Science</button>
+              <button type="button" class="chip" aria-pressed="false">Lifestyle</button>
+              <button type="button" class="chip" aria-pressed="false">Health</button>
+              <button type="button" class="chip" aria-pressed="false">Education</button>
+            </div></div>
+          <button class="btn btn-primary btn-block" type="submit">Join Chatter</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
